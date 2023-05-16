@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* content box */
+.rating-box {
+  margin: 1.25rem;
+  padding: 1rem;
+  max-width: 23.4375rem;
+  max-height: 23.4375rem;
+  background-color: hsla(213, 20%, 18%, 0.63);
+  border-radius: 0.825rem;
+}
+.rating-box h1 {
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 1rem;
+}
+.rating-box p {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+}
+
+/* after submit */
+.thank-you {
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.thank-you img {
+  margin-top: 1.25rem;
+}
+.thank-you h1 {
+  margin-top: 1.625rem;
+}
+.thank-you .text {
+  text-align: center;
+}
+.thank-you .result {
+  margin-top: 1.625rem;
+  text-align: center;
+  background-color: hsla(216, 12%, 54%, 0.13);
+  border-radius: 2rem;
+  padding: 0.25rem 0.625rem;
+}
+.thank-you .result p {
+  color: hsl(25, 97%, 53%);
+}
+
+.hidden {
+  display: none;
+}
+
+/* circle in top right corner */
+.starCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.625rem;
+  height: 2.625rem;
+  width: 2.625rem;
+  border-radius: 50%;
+  background-color: hsla(216, 12%, 54%, 0.13);
+}
+
+/* circles with rates */
+.Rate {
+  height: 2.625rem;
+  width: 2.625rem;
+  border-radius: 50%;
+  background-color: hsla(216, 12%, 54%, 0.13);
+  margin-bottom: 1.625rem;
+  color: hsl(217, 12%, 63%);
+  transition: background-color 0.3s ease;
+  border: 0;
+}
+
+.Rate:hover {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.submit {
+  width: 100%;
+  height: 3rem;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border: 0;
+}
+
+.submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+/* sections */
+.text {
+  margin-bottom: 2rem;
+}
+
+.circles {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+}
+footer a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */

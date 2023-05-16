@@ -1,0 +1,158 @@
+@import 'colors';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Overpass', sans-serif;
+}
+
+body {
+	min-height: 100vh;
+	background-color: $Very-Dark-Blue;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* content box */
+
+
+.rating-box {
+	margin: 1.25rem;
+	padding: 1rem;
+	max-width: 23.4375rem;
+	max-height: 23.4375rem;
+	background-color: $Dark-Blue;
+	border-radius: 0.825rem;
+	h1 {
+		color: $White;
+		margin-bottom: 1rem;
+	}
+	p {
+		color: $Light-Grey;
+		font-size: 15px;
+	}
+}
+
+
+
+
+/* after submit */
+
+.thank-you {
+	width: 100%;
+	
+	flex-direction: column;
+	
+
+	align-items: center;
+	justify-content: center;
+
+	img {
+		margin-top: 1.25rem;
+	}
+
+	h1 {
+		margin-top: 1.625rem;
+	}
+
+	
+
+	.text {
+		text-align: center;
+
+		
+	}
+
+	.result{
+		margin-top: 1.625rem;
+		text-align: center;
+		background-color: $circle;
+		border-radius: 2rem;
+		padding: 0.25rem 0.625rem;
+		p{
+			color: $Orange;
+		}
+
+	}
+}
+
+
+
+.hidden {
+	display: none;
+}
+
+
+
+/* circle in top right corner */
+
+.starCircle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 1.625rem;
+	height: 2.625rem;
+	width: 2.625rem;
+	border-radius: 50%;
+	background-color: $circle;
+}
+
+/* circles with rates */
+
+.Rate {
+	height: 2.625rem;
+	width: 2.625rem;
+	border-radius: 50%;
+	background-color: $circle;
+	margin-bottom: 1.625rem;
+	color: $Light-Grey;
+	transition: background-color 0.3s ease;
+	border: 0;
+}
+
+.Rate:hover {
+	background-color: $Orange;
+}
+
+.submit {
+	width: 100%;
+	height: 3rem;
+	border-radius: 2rem;
+	margin-bottom: 1rem;
+	color: $White;
+	background-color: $Orange;
+	text-transform: uppercase;
+	letter-spacing: 0.15rem;
+	font-weight: bold;
+	transition: background-color 0.3s ease;
+	border: 0;
+}
+
+.submit:hover {
+	background-color: $White;
+	color: $Orange;
+}
+
+
+/* sections */
+
+.text {
+	margin-bottom: 2rem;
+}
+
+.circles {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer {
+	font-size: 11px;
+	text-align: center;
+	color: $White;
+	a {
+		color: hsl(228, 45%, 44%);
+	}
+}
